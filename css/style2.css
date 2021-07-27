@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 640px;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.wrapper .lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.wrapper .lang button{
+    width: 50%;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: nav;
+    font-size: 16px;
+}
+.wrapper .lang button:hover{
+    background-color: #e7e7e7e7;
+}
+.wrapper .lang button:first-child{
+    margin-right: 5px;
+}
+.wrapper .lang button:last-child{
+    margin-left: 5px;
+}
+/*@font face : use two polices*/
+@font-face {
+    font-family: nav;
+    src: url('../fonts/RobotoSlab-SemiBold.ttf');
+}
+@font-face {
+    font-family: head;
+    src: url('../fonts/RobotoSlab-Black.ttf');
+}
+.wrapper .content1 , .wrapper .content2 , .wrapper .content3{
+    background: url(../image/image2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top : 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content1 .form , .content2 .form , .content3 .form{
+    width: 80%;
+    margin: auto;
+}
+.content1 .form {
+    padding-bottom: 60px;
+}
+.content3 .form{
+    width: 60%;
+
+}
+.content1 .form h1 , .content2 .form h1 , .content3 .form h1{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 0.5vh solid #6a252f;
+    color: #6a252f;
+    font-family: head;
+}
+.content1 .form p , .content2 .form p{
+    font-family: nav;
+    color: #a5390f;
+    padding-bottom: 10px;
+}
+.content1 .form span{
+    color: #cb6b0b;
+    cursor: pointer;
+}
+.content1 .form ul li , .content2 .form ul li , .content3 .form ul li{
+font-family: nav;
+line-height: 2;
+}
+.wrapper .content2{
+    height: 130vh;
+    background: url(../image/image3.jpg);
+    background-size: cover;
+}
+.content2 .form h1{
+    color: #7d7a3f;
+    border-bottom: 0.5vh solid #7d7a3f;
+    margin-bottom: 15px;
+}
+.content2 .form p{
+    padding-top: 15px;
+    color:#2a5201 ;
+}
+.wrapper .content3{
+    background: url(../image/image4.jpg);
+    background-size: cover;
+}
+.content3 .form h1{
+    color: #b57c01;
+    border-bottom: 0.5vh solid #b57c01;
+}

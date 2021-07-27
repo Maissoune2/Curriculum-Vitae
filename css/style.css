@@ -1,0 +1,193 @@
+*{
+/*add this css properties to delete them from the elements which had a padding and margin in default*/
+    padding: 0;  
+    margin: 0;
+}
+/*@font face : use two polices*/
+@font-face {
+    font-family: nav;
+    src: url('../fonts/RobotoSlab-SemiBold.ttf');
+}
+@font-face {
+    font-family: head;
+    src: url('../fonts/RobotoSlab-Black.ttf');
+}
+/*------le code css pour l'element article (main element)------*/
+article{
+    width: 90%;
+    height: 130vh;
+    margin: auto; 
+    background:url(../image/image1.jpg)  ;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;  
+}
+/*--------------------pour centrer les element , on utilise flex propretie ---------------------*/
+header, section, .user-photo , .img-box , section .content div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+/*---------------devide the height of the page to 3 parts for the header , section , footer----*/
+/*the height is 130vh // 28.5vh(header's height) + 60vh(section's height) + 35vh(footer's height) + 3*2 (header's and section's margin bottom) */
+/*give the header,section,footer the same width , float and margin right to make them look better*/
+header ,section, footer{
+    width: 69%;
+    float: right;
+    margin-right: 2%;
+}
+/*----------------------------------header css code-------------------------------------*/
+header{
+    height: 28.5vh;
+    border-bottom: 0.5vh solid #0B0E47; /*add a border bottom */
+    margin-bottom: 3vh;
+    font-family: head;
+    color: #0B0E47; /*text color*/
+}
+header h1{
+font-size: 40px; /*precise a font size for the title*/
+}
+/*-------------------------------nav css code------------------------------------------*/
+nav{
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+}
+/*-----------------------------------the user-photo box css code-------------------------*/
+.user-photo{
+    width: 100%;
+    height: 28.5vh; /*add to it the same height as the header to make it look better*/
+    border-bottom: 0.5vh solid #0B0E47;
+}
+.img-box{
+    width: 150px;
+    height: 150px;
+    border: 0.5vh solid #000;
+    border-radius: 50%;/*to make the img box as circle*/
+}
+.img-box img{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%; /*to make it as circle*/
+}
+/*--------------------------------------the user-info box css code------------------------*/
+.user-info{
+    width: 100%;
+    height: 250px;
+    margin-top: 15px;
+}
+.user-info div{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 3;
+    font-family: nav;
+    font-size: 16px;
+}
+.user-info div a{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.8; /*to make its look thin (in french (clair)*/
+}
+.address{
+    opacity: 0.7; /*to make its look thin (in french (clair)*/
+}
+.user-info div i {
+    margin-right: 5px;
+}
+.lang{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.lang button{
+    margin: 10px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #c2b9ba;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: nav;
+}
+.lang button:hover{
+    background-color: #8d836b;
+}
+/*----------------------------------------section css code-----------------------------*/
+section{
+    height:60vh;
+    margin-bottom: 3vh;
+}
+.content{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*justify the elements by making a space btw them*/
+
+}
+section .content div {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    flex-direction: column; /*column direction means : mets les element en ordre verticale*/
+}
+section .content div h3{
+    width: 190px;  /*this is applicated on the titles of the section and footer(to look better)*/
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    border-bottom: 0.5vh solid #0B0E47;
+    font-family: head;
+    color: #0B0E47;
+}
+section .content div p ,footer .content div ul{ /*also this properties is applicated on p and ul elemnts of section and footer tags(to look better)*/
+    font-size: 16px;
+    padding-top: 40px;
+    opacity: 0.9;
+    font-family: nav;
+}
+section .content div a{
+    text-decoration: none; /*to delete the underlin*/
+    color: #D1012C;
+    font-size: 18px;
+}
+section .content div a:hover{  /*hovre means : when we click on the link*/
+    text-decoration: underline;
+    color:#D1012C ;
+}
+/*-------------------------------footer css code-----------------------------------*/
+footer{
+    height: 35vh;
+} 
+footer .content div{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+footer .content div h3{
+    width: 230px;  /*this is applicated on the titles of the section and footer(to look better)*/
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    border-bottom: 0.5vh solid #0B0E47;
+    font-family: head;
+    color: #0B0E47;
+}
+footer .content div ul{
+    text-align: start;
+}
+meter::-webkit-meter-bar {background: #c2b9ba;}
+meter::-webkit-meter-optimum-value {background: #D1012C;}
+meter::-webkit-meter-suboptimum-value {background: #D1012C;}
+meter::-webkit-meter-even-less-good-value {background:#D1012C ;}
+meter{
+    width: 150px;
+}
+/*end of css code*/

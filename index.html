@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!------------------link to css file---------------------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+<!------------------Titre de la page---------------------------------------------------->
+    <title>Curriculum Vitae</title>
+<!--Use font awesome to get icons for free-->
+    <script src="https://kit.fontawesome.com/c3014e7ddb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-------------------article is the main element-------------------------------------------->
+    <article>
+        
+<!-------------------Nav element------------------------------------------------------------>
+        <nav>
+<!--User photo box-->
+            <div class="user-photo">
+                <div class="img-box">
+                    <img id="img" src="image/logo.jpg" alt="Photo De Profile" >
+                </div>
+            </div>
+<!--User info box-->
+            <div class="user-info">
+                <div><i class="fas fa-user"></i> <big>Mechekour Khadidja Amina</big></div>
+                <div><i class="fas fa-envelope"></i><span><a href="mailto:mechekourkhadidja560@gmail.com">mechekourkhadidja560@gmail.com</a></span></div>
+                <div><i class="fas fa-phone-square"></i><span><a href="tel:+213 665 885 223">+213 665 885 223</a></span></div>
+                <div class="address"><i class="fas fa-map-marker-alt"></i><span>cité les 800,boumerdes</span>
+            </div>
+
+            <div class="lang">
+                <button id="en">English</button>
+                <button id="fr">Français</button>
+            </div>
+        </nav>
+<!----------------------------Header element------------------------------------------------>
+        <header>
+<!--Titre de la page principale-->
+            <center>
+                <h1 id="titre">Curriculum Vitae</h1>
+                <span id="sous-titre">Ne soyez pas un programmeur, soyez un résolveur de problèmes</span>
+            </center>
+        </header>
+<!------------------------------Section element--------------------------------------------->
+        <section>
+<!--Content of the section-->
+            <div class="content">
+<!--first column for: Mon Experience-->
+                <div>
+                    <h3 id="exp">Mon Experience :</h3>
+                        <p id="p1">Pour des détails sur mon experience ,</p><br>
+                        <strong ><a id="a1" href="content/experience.html" >Cliquer Ici</a></strong>
+                </div>
+<!--second column for Mes Compétences: -->
+                <div>
+                    <h3 id="comp">Mes Compétences :</h3>
+                    <p id="p2">Pour des détails sur mes compétences ,</p><br>
+                    <strong ><a id="a2" href="content/compétence.html">Cliquer Ici</a></strong>
+                </div>
+<!--third column for Ma Formation : -->
+                <div>
+                    <h3 id="form">Ma Formation :</h3>
+                    <p id="p3">Pour des détails sur ma formation ,</p><br>
+                    <strong ><a id="a3" href="content/formation.html">Cliquer Ici</a></strong>
+                </div>
+            </div>
+        </section>
+<!-------------------------------Footer element--------------------------------------------->
+        <footer>
+<!--Content of the section-->
+            <div class="content">
+<!--list 1 à gauche pour lister les langues-->
+                <div>
+                    <h3 id="lang">Les langues :</h3>
+                    <ul>
+                        <li id="arb"><span>Arabe : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><meter min="0" max="100" value="90" low="50" high="70" optimum="90"></meter></li>
+                        <li id="frc"><span>Français : </span><meter min="0" max="100" value="60" low="50" high="70" optimum="90"></meter></li>
+                        <li id="eng"><span>Anglais : &nbsp;&nbsp;</span><meter min="0" max="100" value="40" low="50" high="70" optimum="90"></meter></li>
+                    </ul>
+                </div>
+<!--list2 à droite pour lister les centres d'intérét-->
+<div>
+    <h3 id="ctr">Les centres d'intéret :</h3>
+    <ul>
+        <li id="voy"><span>Voyage: </span>Asie (Chine, Japan) et autre (USA, Turquie, Australie, Angleterre).</li>
+        <li id="spt"><span>Sport: </span>Volley-ball, Basket-ball, Natation.</li>
+        <li id="ltc"><span>Lecture: </span>Romans français/arabe.</li>
+    </ul>
+</div>
+            </div>
+        </footer>
+
+<!--------------------------End of child elements------------------------------------------->
+    </article>
+<!--------------------------End of main element--------------------------------------------->
+
+<!--**************************************************************************************-->
+<!--**************************************************************************************-->
+<!--**************************************************************************************-->
+    <script src="javascript/lang.js"></script>
+    <script src="javascript/script.js"></script><!--Link to javaScript file--> 
+
+</body>
+
+</html>
